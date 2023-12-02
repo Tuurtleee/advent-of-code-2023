@@ -1,5 +1,13 @@
 # advent-of-code-2023
-Ce dépot contient mes propositions de solution pour les challenges de l'[Advent of Code 2023](https://adventofcode.com/2023) en C++.
+This repository contains my solution proposals for the challenges of the [Advent of Code 2023](https://adventofcode.com/2023) in C++.
 
-## Utilisation
-Pour compiler les solutions, il suffit de faire `make part1` (resp `make part2`) dans le dossier de la solution. Un exécutable est alors créé et directement exécuté.
+## Usage
+To compile and run the solutions, simply run `make part1` (or `make part2`) in the solution folder. An executable will be created and executed directly.
+
+## Results
+Running on a Ryzen 7 5700U
+
+| Day | Part 1 | Part 2 |
+| --- | ------ | ------ |
+| [01](https://adventofcode.com/2023/day/1)  |  120µs |  880µs |
+| [02](https://adventofcode.com/2023/day/2)  |  951µs |  940µs |
