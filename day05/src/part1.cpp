@@ -10,14 +10,13 @@
 using namespace std;
 using namespace std::chrono;
 
-vector<long int> applyRange(vector<long int> v, vector<long int> range, vector<bool>* vstatus){
-    for(int i=0;i<v.size();i++){
-        if(v[i] >= range[1] && v[i] < (range[1]+range[2]) && (*vstatus)[i]==false){
-            v[i] = range[0] + (v[i] - range[1]);
+void applyRange(vector<long int>* v, vector<long int> range, vector<bool>* vstatus){
+    for(int i=0;i<(*v).size();i++){
+        if((*v)[i] >= range[1] && (*v)[i] < (range[1]+range[2]) && (*vstatus)[i]==false){
+            (*v)[i] = range[0] + ((*v)[i] - range[1]);
             (*vstatus)[i] = true;
         }
     }
-    return v;
 }
 int main() {
     auto start = high_resolution_clock::now();
@@ -66,7 +65,7 @@ int main() {
                 v2.push_back(stol(match.str()));
                 currentMatches++;
             }
-            v = applyRange(v, v2, &vstatus);
+            applyRange(&v, v2, &vstatus);
             lineType = 1;
             continue;
         }
