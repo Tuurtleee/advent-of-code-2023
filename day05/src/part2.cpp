@@ -11,7 +11,7 @@ using namespace std;
 using namespace std::chrono;
 
 
-long int getNbSeed(vector<long int> v){//debug function (to check if we still have all the seeds)
+long int getNbSeed(vector<long int> &v){//debug function (to check if we still have all the seeds)
     long int res = 0;
     for(int i = 0; i < v.size(); i++){
         if(i%2 == 1){
@@ -183,6 +183,6 @@ int main()
     cout << "Minimum: " << min << endl;
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
-    cout << "Temps d'exécution: " << duration.count() << " µs" << endl;
+    cout << "Time elapsed: " << duration.count() << " µs" << endl;
     return 0;
 }

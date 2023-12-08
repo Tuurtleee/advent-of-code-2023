@@ -71,6 +71,6 @@ int main()
     std::cout << "Result: " << result << std::endl;
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
-    std::cout << "Temps d'exécution: " << duration.count() << " µs" << std::endl;
+    std::cout << "Time elapsed: " << duration.count() << " µs" << std::endl;
     return 0;
 }

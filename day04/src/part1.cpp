@@ -64,6 +64,6 @@ int main()
     cout << "Result: " << result << endl;
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
-    cout << "Temps d'exécution: " << duration.count() << " µs" << endl;
+    cout << "Time elapsed: " << duration.count() << " µs" << endl;
     return 0;
 }

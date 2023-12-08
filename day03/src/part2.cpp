@@ -14,7 +14,7 @@ typedef pair<int, int> Position;
 typedef vector<int> Neighbors;
 map<Position, Neighbors> numberNeighbors;
 
-void getNumbers(string line_1,string line,string line_p1,int id){
+void getNumbers(string &line_1,string &line,string &line_p1,int id){
     //checking last line
     vector<int> indexes;
         bool status = false;
@@ -131,6 +131,6 @@ int main()
     cout << "Sum: " << sum << endl;
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
-    cout << "Temps d'exécution: " << duration.count() << " µs" << endl;
+    cout << "Time elapsed: " << duration.count() << " µs" << endl;
     return 0;
 }

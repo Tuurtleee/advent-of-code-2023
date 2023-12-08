@@ -10,9 +10,10 @@ Running on a Ryzen 7 5700U
 | Day | Part 1 | Part 2 |
 | --- | ------ | ------ |
 | [01](https://adventofcode.com/2023/day/1)  |  120µs |  880µs |
-| [02](https://adventofcode.com/2023/day/2)  |  951µs |  940µs |
-| [03](https://adventofcode.com/2023/day/3)  |  191µs |  245µs |
+| [02](https://adventofcode.com/2023/day/2)  |  951µs |  934µs |
+| [03](https://adventofcode.com/2023/day/3)  |  176µs |  235µs |
 | [04](https://adventofcode.com/2023/day/4)  |  552µs |  578µs |
 | [05](https://adventofcode.com/2023/day/5)  |  9422µs |  9734µs |
 | [06](https://adventofcode.com/2023/day/6)  |  97µs |  14179µs |
-| [07](https://adventofcode.com/2023/day/7)  |  5160µs |  5281µs |
+| [07](https://adventofcode.com/2023/day/7)  |  5160µs |  4838µs |
+| [08](https://adventofcode.com/2023/day/8)  |  944µs |  4217µs |

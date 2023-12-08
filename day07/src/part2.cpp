@@ -10,7 +10,7 @@
 using namespace std;
 using namespace std::chrono;
 
-char getMaxdiff4(map<char, int> m)
+char getMaxdiff4(map<char, int> &m)
 {
     char result = 'J';
     int maxdiff = 0;
@@ -228,6 +228,6 @@ int main()
     cout << "Result: " << result << endl;
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
-    cout << "Temps d'exécution: " << duration.count() << " µs" << endl;
+    cout << "Time elapsed: " << duration.count() << " µs" << endl;
     return 0;
 }

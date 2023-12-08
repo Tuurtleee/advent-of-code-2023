@@ -10,7 +10,7 @@
 using namespace std;
 using namespace std::chrono;
 
-int getNumbers(string line_1, string line, string line_p1)
+int getNumbers(string &line_1, string &line, string &line_p1)
 {
     int sum = 0;
     // checking last line
@@ -111,6 +111,6 @@ int main()
     cout << "Sum: " << sum << endl;
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
-    cout << "Temps d'exécution: " << duration.count() << " µs" << endl;
+    cout << "Time elapsed: " << duration.count() << " µs" << endl;
     return 0;
 }

@@ -10,11 +10,11 @@
 using namespace std;
 using namespace std::chrono;
 
-void applyRange(vector<long int>* v, vector<long int> range, vector<bool>* vstatus){
-    for(int i=0;i<(*v).size();i++){
-        if((*v)[i] >= range[1] && (*v)[i] < (range[1]+range[2]) && (*vstatus)[i]==false){
-            (*v)[i] = range[0] + ((*v)[i] - range[1]);
-            (*vstatus)[i] = true;
+void applyRange(vector<long int> &v, vector<long int> &range, vector<bool>&vstatus){
+    for(int i=0;i<v.size();i++){
+        if(v[i] >= range[1] && v[i] < (range[1]+range[2]) && vstatus[i]==false){
+            v[i] = range[0] + (v[i] - range[1]);
+            vstatus[i] = true;
         }
     }
 }
@@ -65,7 +65,7 @@ int main() {
                 v2.push_back(stol(match.str()));
                 currentMatches++;
             }
-            applyRange(&v, v2, &vstatus);
+            applyRange(v, v2, vstatus);
             lineType = 1;
             continue;
         }
@@ -77,6 +77,6 @@ int main() {
     cout << "Minimum: " << min << endl;
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
-    cout << "Temps d'exécution: " << duration.count() << " µs" << endl;
+    cout << "Time elapsed: " << duration.count() << " µs" << endl;
     return 0;
 }
