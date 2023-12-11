@@ -18,3 +18,5 @@ Running on a Ryzen 7 5700U
 | [07](https://adventofcode.com/2023/day/7)  |  5160µs |  4838µs |
 | [08](https://adventofcode.com/2023/day/8)  |  944µs |  4217µs |
 | [09](https://adventofcode.com/2023/day/9)  |  671µs |  655µs |
+| [10](https://adventofcode.com/2023/day/10)  |  0.11s |  0.21s |
+| [11](https://adventofcode.com/2023/day/11)  |  301µs |  317µs |
